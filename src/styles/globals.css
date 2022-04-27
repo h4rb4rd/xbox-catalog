@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+summary {
+	@apply list-none;
+}
+
+summary::-webkit-details-marker {
+	@apply hidden;
+}
+
+details[open] summary {
+	@apply bg-gray-300;
+}
+
+details[open] .arrow-icon {
+	@apply rotate-0;
+}
+
+.availability-radio:checked ~ .availability-label {
+	@apply bg-gray-200;
+}
