@@ -1,3 +1,4 @@
+import ResetButton from 'components/ResetButton'
 import FiltersItem from './components/FiltersItem'
 import NavBar from './components/NavBar'
 
@@ -9,12 +10,7 @@ const AsideBar = () => {
 			<NavBar />
 			<form>
 				<h3 className='text-2xl font-bold mb-4'>Filters</h3>
-				<button
-					type='reset'
-					className='uppercase font-extrabold text-green-700 '
-				>
-					Clear Filters
-				</button>
+				<ResetButton>Clear Filters</ResetButton>
 				<hr className='border-gray-300 mt-4 mb-2' />
 				<details className='bg-gray-50'>
 					<summary className='cursor-pointer p-3 mb-1 bg-gray-100 hover:shadow hover:bg-gray-300'>
